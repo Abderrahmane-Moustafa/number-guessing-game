@@ -1,4 +1,7 @@
 import random
+from art import logo
+
+print(logo)
 
 print("Welcome to the Number Guessing Game!")
 print("I'm thinking of a number between 1 and 100.")
@@ -6,7 +9,6 @@ print("I'm thinking of a number between 1 and 100.")
 level = input("Choose a difficulty. Type 'easy' or 'hard': ").lower()
 
 right_num = random.randint(1, 100)
-print(right_num)
 
 def check_result(tries):
     while tries > 0:
